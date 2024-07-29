@@ -3,12 +3,14 @@ const NETWORK_ENV = process.env.BUILD_ENV;
 const configMap = {
   mainnet: {
     botToken: process.env.TELEGRAM_BOT_TOKEN_MAINNET,
+    serviceUrl: "https://app.awaken.finance",
     marketUrl: "https://app.awaken.finance/overview",
     tradeUrl: "https://app.awaken.finance/trading",
     swapUrl: "https://app.awaken.finance/swap",
   },
   testnet: {
     botToken: process.env.TELEGRAM_BOT_TOKEN_TESTNET,
+    serviceUrl: "https://test-app.awaken.finance",
     marketUrl: "https://test-app.awaken.finance/overview",
     tradeUrl: "https://test-app.awaken.finance/trading",
     swapUrl: "https://test-app.awaken.finance/swap",
