@@ -54,7 +54,7 @@ jobs:
           github-token: ${{ secrets.TOK }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
-              owner: 'AwakenProject',
+              owner: 'Awaken-Finance',
               repo: 'devops',
               workflow_id: 'deployment_testnet.yaml',
               ref: 'main',
