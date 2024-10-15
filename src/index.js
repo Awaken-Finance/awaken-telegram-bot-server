@@ -34,24 +34,20 @@ bot.onText(/\/start/, async (msg) => {
         inline_keyboard: [
           [
             {
-              text: "Market",
+              text: "Open and Swap",
               web_app: {
-                url: config.marketUrl,
-              },
-            },
-            {
-              text: "Trade",
-              web_app: {
-                url: config.tradeUrl,
+                url: config.swapUrl,
               },
             },
           ],
           [
             {
-              text: "Swap",
-              web_app: {
-                url: config.swapUrl,
-              },
+              text: "Join Community",
+              url: config.communityUrl,
+            },
+            {
+              text: "Follow X",
+              url: config.twitterUrl,
             },
           ],
         ],
